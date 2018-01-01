@@ -1,0 +1,37 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Simple Notification</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+
+
+  <ion-content padding>
+
+
+          <form (ngSubmit)="createnotification()" #registerForm="ngForm">
+
+            <ion-item class="martop trans">
+              <ion-label  color="primary" stacked>Title</ion-label>
+              <ion-input  placeholder="Title" [(ngModel)]="title" name="title" required></ion-input>
+            </ion-item>
+
+            <ion-item class="martop trans">
+              <ion-label  color="primary" stacked>Note</ion-label>
+              <ion-input  placeholder="Note" [(ngModel)]="description" name="description" required></ion-input>
+            </ion-item>
+
+            <ion-item class="martop trans">
+              <ion-label color="primary" stacked>DateTime</ion-label>
+              <ion-input type="text" tappable readonly name="date" [ngModel]="date" (tap)="openCalendar()"></ion-input>
+            </ion-item>
+
+          <div class="center">
+            <button ion-button class="submit-btn" type="submit" [disabled]="!registerForm.form.valid">Add Reminder</button>
+          </div>
+
+          </form>
+
+
+  </ion-content>

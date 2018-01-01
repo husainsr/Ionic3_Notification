@@ -1,0 +1,67 @@
+page-home {
+
+  ion-input{
+    border: 1px solid #450b06;
+    border-radius: 2px;
+    padding-left: 10px !important;
+  }
+
+
+
+
+  .center{
+    text-align: center;
+}
+
+.image{
+  background-image: url(../assets/imgs/blur.jpg);
+}
+
+ .textcolor{
+   color: #450b06;
+ }
+
+.trans{
+  background: transparent;
+}
+
+.color{
+    text-decoration-color: #450b06
+}
+
+.design {
+    border: 1px solid #450b06;
+    border-radius: 2px;
+    //padding: 5px;
+    //text-align: center;
+  }
+
+  .submit-btn {
+    background:#225b91;
+    border-radius: 15px !important;
+    border: 1px solid #ffffff;
+    margin-bottom: 5px;
+  }
+
+  .mymargin{
+      margin-top: 18px;
+  }
+
+  .martop{
+    margin-top: 2px;
+  }
+
+  .des{
+    border: 0.1em solid #450b06;
+    border-radius: 4px;
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-top: 5px
+  }
+
+  .toolbar-background {
+    //background-color:  #00b0ff;
+    background-color:  #225b91
+  }
+
+}
